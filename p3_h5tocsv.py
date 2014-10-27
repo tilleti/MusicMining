@@ -18,8 +18,7 @@ def get_h5_files(basedir,ext='.h5') :
 			finalFiles.append(file)
 
 	return finalFiles
-def
- get_all_fields():
+def get_all_fields():
 
 	if hasattr(get_all_fields, "fields"):
 		return get_all_fields.fields
