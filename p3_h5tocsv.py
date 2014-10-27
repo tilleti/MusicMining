@@ -18,8 +18,8 @@ def get_h5_files(basedir,ext='.h5') :
 			finalFiles.append(file)
 
 	return finalFiles
-
-def get_all_fields():
+def
+ get_all_fields():
 
 	if hasattr(get_all_fields, "fields"):
 		return get_all_fields.fields
@@ -129,8 +129,6 @@ def write_csv(dataPath,outPath='out.csv',fieldType='onevalue'):
 		outfile.write(rows)
 		c = c+1
 		percentage = (c/total)*100
-		if(c == 1000):
-			break
 
 	outfile.close()
 
