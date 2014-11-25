@@ -18,8 +18,8 @@ def output_worker(queue,total):
 			percent = ((total-queue.qsize())/total) * 100
 		else:
 			percent = 0
-		sys.stdout.write("\rWorking...%.2f%%" % percent)
-		sleep(0.25)
+		sys.stdout.write("\r[%.2f%%] Working..." % percent)
+		sleep(1)
 
 def start(path,thread,**kwargs):
 
@@ -54,3 +54,5 @@ def start(path,thread,**kwargs):
 
 	queue.join()
 	h5data_queue.join()
+
+	sys.stdout.write("\r[%.2f%%] Done!       \n" % 100)
