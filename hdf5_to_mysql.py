@@ -32,10 +32,13 @@ def main():
 
 	args = sys.argv[1:]
 	path = args[0]
+	start = int(args[1]) if len(args)>1 else 0
+	end = int(args[2]) if len(args)>2 else None
+
 
 	cnx = mysql_helper.connect(user="root",database="musicmining")
 
-	hdf5_import_threading.start(path,thread=dict(target=mysql_worker,kwargs={"cnx":cnx}))
+	hdf5_import_threading.start(path,thread=dict(target=mysql_worker,kwargs={"cnx":cnx}),start=start,end=end)
 	
 	cnx.close()
 

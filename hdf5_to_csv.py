@@ -27,9 +27,13 @@ def main():
 
 	args = sys.argv[1:]
 	path = args[0]
+	start = int(args[1]) if len(args)>1 else 0
+	end = int(args[2]) if len(args)>2 else None
+
+
 
 	f = open("db.csv",'w')
-	hdf5_import_threading.start(path,thread=dict(target=csv_worker,kwargs={"file":f}))
+	hdf5_import_threading.start(path,thread=dict(target=csv_worker,kwargs={"file":f}),start=start,end=end)
 	f.close()
 
 main()
