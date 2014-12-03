@@ -23,7 +23,7 @@ vars <- c(vars[1:4],vars[6],vars[8],vars[11],vars[14:15],vars[17:21],vars[26:29]
 musicKMEANS <- new.env(parent=musicDS)
 
 evalq({
-	model <- kmeans(x=na.omit(data[,vars]),centers=10)
+	model <- kmeans(x=na.omit(data[,vars]),centers=30)
 	}, musicKMEANS)
 
 
@@ -43,4 +43,25 @@ c8 <- music[musicClusters == 8,]
 c9 <- music[musicClusters == 9,]
 c10 <- music[musicClusters == 10,]
 #clusters seem to add up to 10,000 regardless...
+c11 <- music[musicClusters == 11,]
+c12 <- music[musicClusters == 12,]
+c13 <- music[musicClusters == 13,]
+c14 <- music[musicClusters == 14,]
+c15 <- music[musicClusters == 15,]
+c16 <- music[musicClusters == 16,]
+c17 <- music[musicClusters == 17,]
+c18 <- music[musicClusters == 18,]
+c19 <- music[musicClusters == 19,]
+c20 <- music[musicClusters == 20,]
 
+
+c21 <- music[musicClusters == 21,]
+c22 <- music[musicClusters == 22,]
+c23 <- music[musicClusters == 23,]
+c24 <- music[musicClusters == 24,]
+c25 <- music[musicClusters == 25,]
+c26 <- music[musicClusters == 26,]
+c27 <- music[musicClusters == 27,]
+c28 <- music[musicClusters == 28,]
+c29 <- music[musicClusters == 29,]
+c30 <- music[musicClusters == 30,]
