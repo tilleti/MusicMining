@@ -23,6 +23,9 @@ def output_worker(queue,total):
 
 def start(path,thread,**kwargs):
 
+	
+	rangeStart = kwargs['start'] if 'start' in kwargs else 0
+	rangeEnd = kwargs['end'] if 'end' in kwargs else None
 
 	queue = Queue()
 	h5data_queue = Queue()
@@ -49,7 +52,7 @@ def start(path,thread,**kwargs):
 	t.daemon = True
 	t.start()
 	
-	for h5file in h5files:
+	for h5file in h5files[rangeStart:rangeEnd]:
 	    queue.put(h5file)
 
 	queue.join()
