@@ -16,9 +16,11 @@ def output_worker(queue,total):
 	while True:
 		if queue.qsize() > 0:
 			percent = ((total-queue.qsize())/total) * 100
+			sys.stdout.write("\r[%.2f%%] Working..." % percent)
 		else:
-			percent = 0
-		sys.stdout.write("\r[%.2f%%] Working..." % percent)
+			#pass
+			sys.stdout.write("\rWorking...         " )
+		#sys.stdout.write("\r[%.2f%%] Working..." % percent)
 		sleep(1)
 
 def start(path,thread,**kwargs):
