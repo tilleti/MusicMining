@@ -89,7 +89,7 @@ def main():
 
 
 
-	f = open("db.csv",'w')
+	f = open("db.csv",'w',encoding='utf-8')
 	f.write(CSV_HEADER)
 
 	hdf5_import_threading.start(path,thread=dict(target=csv_worker,kwargs={"file":f}),start=start,end=end)

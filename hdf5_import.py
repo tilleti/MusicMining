@@ -82,7 +82,7 @@ def h5file_data(h5file):
 def is_array(N):
 	return hasattr(N, '__len__') and (not isinstance(N, str)) and (not isinstance(N,numpy.bytes_))
 
-def _get_fields_data(h5data,fields):
+def get_fields_data_product(h5data,fields):
 	cols = []
 	for field in fields:
 		field_value = h5data[field]
@@ -96,17 +96,16 @@ def _get_fields_data(h5data,fields):
 
 		cols.append(sanitized_list)
 
-	#result = []
+	result = []
 	
 	for i in itertools.product(*cols):
 		data = {}
 		for idx,field in enumerate(fields):
 			data[field] = i[idx]
-		yield data
-		#result.append(data)
+		result.append(data)
 
 	
-	#return result
+	return result
 	#
 def get_fields_data(h5data,fields):
 	#print (h5data)
