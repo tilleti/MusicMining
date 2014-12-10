@@ -78,12 +78,12 @@ CREATE TABLE IF NOT EXISTS `millionsong`.`song_association` (
   `songC` varchar(50) NOT NULL,
   `support` float NOT NULL,
   `confidence` float NOT NULL,
-  `lift` float NOT NULL,
-  KEY `FK_song_association_idx` (`songA`,`songC`),
-  KEY `FK_song_assoc1_idx` (`songA`),
-  KEY `FK_song_assoc2_idx` (`songC`),
-  CONSTRAINT `FK_song_assoc1` FOREIGN KEY (`songA`) REFERENCES `song` (`songId`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `FK_song_assoc2` FOREIGN KEY (`songC`) REFERENCES `song` (`songId`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  `lift` float NOT NULL
+--  KEY `FK_song_association_idx` (`songA`,`songC`),
+--  KEY `FK_song_assoc1_idx` (`songA`),
+--  KEY `FK_song_assoc2_idx` (`songC`),
+ -- CONSTRAINT `FK_song_assoc1` FOREIGN KEY (`songA`) REFERENCES `song` (`songId`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+ -- CONSTRAINT `FK_song_assoc2` FOREIGN KEY (`songC`) REFERENCES `song` (`songId`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) 
 ENGINE=InnoDB 
 DEFAULT CHARSET=utf8;
