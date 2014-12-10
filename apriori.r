@@ -1,0 +1,5 @@
+library(arules)
+data <- read.table("train_triplets.txt",sep="\t",header=FALSE,nrows=1000)
+tr <- as(split(data$V2,data$V1),"transactions")
+rules <- apriori(tr,parameter=list(supp=0.1,conf=0.1,minlen=2,maxlen=2))
+write(rules,file="rules.csv",sep=",",quote=TRUE,row.names=FALSE)
