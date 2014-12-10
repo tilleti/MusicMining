@@ -1,0 +1,30 @@
+#~~~~~~~ MySQL Import ~~~~~~~~
+
+#~~~~~~~ K means clustering analysis~~~~~
+To perform the k means analysis on the data the file db_modified.csv has
+to be created. This is created from the db.csv file created using the
+command:
+        $python hdf5_to_csv.py PATH_TO/MillionSongSubset/data
+
+The output file db.csv is opened and saved as a proper csv file(db_modified.csv)
+for R has trouble handing multiple separator tokens.
+
+Kmeans is performed on the resulting csv for 2 orders of partitioning using the
+musickmeans.r script.
+Within R terminal:
+        >source("musickmeans.r")
+To output the partitions created to separate csv files, within the R terminal:
+        >source("musickmeansWrite.r")
+
+To see the cluster centers created in musickmeansWrite.r, the centers can be
+exported via the r script:
+        >source("centers.r")
+
+To see the accuracy of clustering within one level of clustering run the
+R script within the R terminal:
+        >source("compared.r")
+
+#~~~~~~~~ Association ~~~~~~~~~
+
+
+#~~~~~~~~ Team Roles ~~~~~~~~~~~~

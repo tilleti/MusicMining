@@ -45,10 +45,10 @@ musicKMEANS <- new.env(parent=musicDS)
 #vars <- c(vars[1:2],vars[14],vars[21],vars[23:35],vars[37:49],vars[52])
 
 #all num, minus ident, minus long & lat, minus confidence and weights
-vars <- c(vars[1:2],vars[14],vars[21],vars[23:27],vars[29:30],vars[32:34],vars[37],vars[39:42],vars[44],vars[46],vars[48],vars[52])
+#vars <- c(vars[1:2],vars[14],vars[21],vars[23:27],vars[29:30],vars[32:34],vars[37],vars[39:42],vars[44],vars[46],vars[48],vars[52])
 
 #most correlated
-#vars <- c(vars[1:2],vars[24],vars[32],vars[39:40],vars[43],vars[48])
+vars <- c(vars[1:2],vars[24],vars[32],vars[39:40],vars[43],vars[48])
 
 
 music1 <- music[,vars]
@@ -113,11 +113,6 @@ c3_1 <- c3[musicClusters3 == 1,]
 c3_2 <- c3[musicClusters3 == 2,]
 c3_3 <- c3[musicClusters3 == 3,]
 c3_4 <- c3[musicClusters3 == 4,]
-c3_5 <- c3[musicClusters3 == 4,]
-c3_6 <- c3[musicClusters3 == 4,]
-c3_7 <- c3[musicClusters3 == 4,]
-c3_8 <- c3[musicClusters3 == 4,]
-c3_9 <- c3[musicClusters3 == 4,]
 
 ##split agian c4
 c4k <- kmeans(x=na.omit(c4[,vars]),centers=6)
