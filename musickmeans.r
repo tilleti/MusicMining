@@ -113,6 +113,11 @@ c3_1 <- c3[musicClusters3 == 1,]
 c3_2 <- c3[musicClusters3 == 2,]
 c3_3 <- c3[musicClusters3 == 3,]
 c3_4 <- c3[musicClusters3 == 4,]
+c3_5 <- c3[musicClusters3 == 4,]
+c3_6 <- c3[musicClusters3 == 4,]
+c3_7 <- c3[musicClusters3 == 4,]
+c3_8 <- c3[musicClusters3 == 4,]
+c3_9 <- c3[musicClusters3 == 4,]
 
 ##split agian c4
 c4k <- kmeans(x=na.omit(c4[,vars]),centers=6)

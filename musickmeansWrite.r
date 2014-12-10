@@ -21,6 +21,11 @@ write.csv(c3_1,"clust3_1.csv")
 write.csv(c3_2,"clust3_2.csv")
 write.csv(c3_3,"clust3_3.csv")
 write.csv(c3_4,"clust3_4.csv")
+write.csv(c3_5,"clust3_5.csv")
+write.csv(c3_6,"clust3_6.csv")
+write.csv(c3_7,"clust3_7.csv")
+write.csv(c3_8,"clust3_8.csv")
+write.csv(c3_9,"clust3_9.csv")
 
 #c4 writeout
 write.csv(c4_1,"clust4_1.csv")
