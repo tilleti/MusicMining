@@ -36,11 +36,11 @@ R script within the R terminal:
 
 #~~~~~~~~ Association ~~~~~~~~~
 
-To run association run the aprior.r script. You need to install the 'arules' library.
+To create association rules run the aprior.r script. You need to install the 'arules' library.
 The apriori.r script expects "train_triplets.txt" file to be present in the same working directory.
 	>source("apriori.r")
 
-This will create a file names "rules.csv" in the same working directory. This file will contain the 
+This will create a file named "rules.csv" in the same working directory. This file will contain the 
 association rules, support, confidence and lift values.
 
 To import "rules.csv" to MySQL you may run the following script:
