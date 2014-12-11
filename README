@@ -51,18 +51,10 @@ Also, make sure conf.ini matches your MySQL configuration before running this sc
 
 
 #~~~~~~~~ Team Roles ~~~~~~~~~~~~
-There are a few things on which all of us worked together - like, selecting the dataset, discussing 
-what to put in the reports and poster, selecting attributes, etc.
+There are a few things on which all of us worked together - like, selecting the dataset, discussing what to put in the reports and poster, selecting attributes, etc.
 
-Alyssa worked mainly on the data analysis using clustering and she was the R expert in the team. She 
-is the first person in the group to understand the data completely. She was also in charge of the 
-report write-up and proofreading.
+Alyssa worked mainly on the data analysis using clustering and she was the R expert in the team. She is the first person in the group to understand the data completely. She was also in charge of the report write-up and proofreading.
 
-Prashanth worked on creating the database schema, generating diagrams and tuning the schema. He also 
-developed the basic scripts that would write data to the database from python data structures. He was 
-in charge of preparing the poster.
+Prashanth worked on creating the database schema, generating diagrams and tuning the schema. He also developed the basic scripts that would write data to the database from python data structures. He was in charge of preparing the poster.
 
-Carlos worked on the python scripts to read data from hdf5 files and putting them into csv. He also 
-worked on python scripts that read data from files and put them into python data structures, which 
-can make use of the scripts created by Prashanth (and improvising them). He also worked on analysing 
-the data using association.
+Carlos worked on the python scripts to read data from hdf5 files and putting them into csv. He also worked on python scripts that read data from files and put them into python data structures, which can make use of the scripts created by Prashanth (and improvising them). He also worked on analysing the data using association.
