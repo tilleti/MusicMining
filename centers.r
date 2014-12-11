@@ -31,7 +31,7 @@ r_names <- c("5_1","5_2","5_3","5_4","5_5")
 rownames(cenT) <- r_names
 centerTable <- rbind(centerTable,cenT)
 
-write.csv(centerTable,"test.csv")
+write.csv(centerTable,"centers.csv")
 
 #c1 writeout
 write.csv(c1k$centers,"clust1centers.csv")
