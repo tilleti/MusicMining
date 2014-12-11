@@ -64,5 +64,5 @@ the incharge of preparing the poster.
 
 Carlos worked on the python scripts to read data from hdf5 files and putting them into csv. He also 
 worked on python scripts that read data from files and put them into python data structures, which 
-can make use of the scripts created by prashanth (and improvising them). He also worked on analysing 
+can make use of the scripts created by Prashanth (and improvising them). He also worked on analysing 
 the data using association.
